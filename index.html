@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manoksha | Raksha ❤️ Manohar</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background:#f7f0e6;
+    color:#3b2b20;
+    text-align:center;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1600');
+    background-size:cover;
+    background-position:center;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    font-size:60px;
+    margin:10px;
+}
+
+.button{
+    background:#7b1f35;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    margin-top:20px;
+    display:inline-block;
+}
+
+.section{
+    padding:80px 20px;
+}
+
+.card{
+    background:white;
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.1);
+}
+
+.event{
+    margin:15px 0;
+    padding:15px;
+    background:#fff;
+    border-radius:10px;
+}
+
+#countdown{
+    font-size:32px;
+    font-weight:bold;
+    color:#7b1f35;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+    <h2>॥ Om Shri Ganeshaya Namah ॥</h2>
+    <h1>Raksha ❤️ Manohar</h1>
+    <p>#Manoksha</p>
+
+```
+<a href="#invitation" class="button">
+    🌸 Open Invitation
+</a>
+```
+
+</section>
+
+<section id="invitation" class="section">
+    <div class="card">
+        <h2>With the blessings of the Almighty and our beloved families</h2>
+
+```
+    <p>
+        We cordially invite you to celebrate the sacred union of
+    </p>
+
+    <h1>Raksha ❤️ Manohar</h1>
+
+    <h3>02 July 2026</h3>
+</div>
+```
+
+</section>
+
+<section class="section">
+    <h2>⏳ Countdown</h2>
+
+```
+<div id="countdown"></div>
+```
+
+</section>
+
+<section class="section">
+    <h2>Wedding Celebrations</h2>
+
+```
+<div class="card">
+
+    <div class="event">
+        🌿 Mehendi — 30 June 2026 | 6:00 PM
+    </div>
+
+    <div class="event">
+        🌼 Haldi — 01 July 2026 | 10:00 AM
+    </div>
+
+    <div class="event">
+        💍 Engagement — 01 July 2026 | 5:00 PM
+    </div>
+
+    <div class="event">
+        🐎 Barat — 01 July 2026 | 7:00 PM
+    </div>
+
+    <div class="event">
+        🔔 Wedding Muhurtham — 02 July 2026 | 5:15 AM
+    </div>
+
+    <div class="event">
+        🎉 Reception — 02 July 2026 | 12:00 PM
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="section">
+    <div class="card">
+
+```
+    <h2>📍 Venue</h2>
+
+    <h3>
+        Sri Bhramaramba Mallikarjuna Temple
+    </h3>
+
+    <p>
+        Maski, Karnataka 584124
+    </p>
+
+</div>
+```
+
+</section>
+
+<section class="section">
+    <h2>Raksha ❤️ Manohar</h2>
+
+```
+<p>
+    Your presence and blessings will make our celebration truly special.
+</p>
+
+<h3>#Manoksha</h3>
+```
+
+</section>
+
+<script>
+const target =
+new Date("2026-07-02T05:15:00+05:30").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const diff = target - now;
+
+const days =
+Math.floor(diff / (1000*60*60*24));
+
+const hours =
+Math.floor((diff%(1000*60*60*24))/
+(1000*60*60));
+
+const minutes =
+Math.floor((diff%(1000*60*60))/
+(1000*60));
+
+const seconds =
+Math.floor((diff%(1000*60))/1000);
+
+document.getElementById("countdown")
+.innerHTML =
+days+" Days "+
+hours+" Hours "+
+minutes+" Minutes "+
+seconds+" Seconds";
+
+},1000);
+</script>
+
+</body>
+</html>
